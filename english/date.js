@@ -13,7 +13,7 @@ function myFunction() {
     var n = weekday[d.getDay()];
     document.getElementById("dotw").innerHTML = n;
 
-var myDate = new Date() + year; 
+var myDate = new Date(); 
   
 if ( myDate.getHours() < 6 )  
 { 
@@ -41,7 +41,7 @@ var month = months[myDate.getMonth()];
 
 	document.getElementById('month').innerHTML= myDate.getDate() + " " + month; 
 
-    var today = new Date();
+    var today = new Date() + " " + y;
     var h = today.getHours();
     var m = today.getMinutes();
     m = checkTime(m);
