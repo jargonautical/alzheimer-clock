@@ -1,5 +1,6 @@
 function myFunction() {
     var d = new Date();
+    var y = year;
     var weekday = new Array(7);
     weekday[0] = "Sunday";
     weekday[1] = "Monday";
@@ -38,7 +39,7 @@ var months = ['January','February','March','April','May','June','July','August',
 
 var month = months[myDate.getMonth()];
 
-	document.getElementById('month').innerHTML= myDate.getDate() + " " + month; 
+	document.getElementById('month').innerHTML= myDate.getDate() + " " + month + " " + year; 
 
     var today = new Date();
     var h = today.getHours();
