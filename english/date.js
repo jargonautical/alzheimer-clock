@@ -1,6 +1,5 @@
 function myFunction() {
     var d = new Date();
-    var y = year;
     var weekday = new Array(7);
     weekday[0] = "Sunday";
     weekday[1] = "Monday";
@@ -35,13 +34,15 @@ if ( myDate.getHours() > 17 && myDate.getHours() <= 24 )
     document.getElementById('daytime').innerHTML='Evening'; 
 } 
 
+var myYear = myDate(year);
+	
 var months = ['January','February','March','April','May','June','July','August','September','October','November','December'];
 
 var month = months[myDate.getMonth()];
 
-	document.getElementById('month').innerHTML= myDate.getDate() + " " + month; 
+	document.getElementById('month').innerHTML= myDate.getDate() + " " + month + " " + myYear; 
 
-    var today = new Date() + " " + y;
+    var today = new Date();
     var h = today.getHours();
     var m = today.getMinutes();
     m = checkTime(m);
