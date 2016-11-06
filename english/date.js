@@ -33,14 +33,12 @@ if ( myDate.getHours() > 17 && myDate.getHours() <= 24 )
 { 
     document.getElementById('daytime').innerHTML='Evening'; 
 } 
-
-var myYear = myDate(year);
 	
 var months = ['January','February','March','April','May','June','July','August','September','October','November','December'];
 
 var month = months[myDate.getMonth()];
 
-	document.getElementById('month').innerHTML= myDate.getDate() + " " + month + " " + myYear; 
+	document.getElementById('month').innerHTML= myDate.getDate() + " " + month; 
 
     var today = new Date();
     var h = today.getHours();
